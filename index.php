@@ -60,6 +60,18 @@ if ( function_exists( 'register_block_style' ) ) {
 		);
 
 		/**
+		 * Register block style: Collage
+		 */
+		register_block_style(
+			'core/gallery',
+			array(
+				'name'         => 'collage-stacked',
+				'label'        => 'Photocopy Collage',
+				'style_handle' => 'block-styles-stylesheet',
+			)
+		);
+
+		/**
 		 * Register block style: Baseline Shift
 		 */
 		register_block_style(
@@ -97,7 +109,7 @@ add_action('wp_enqueue_scripts', 'wcus_block_styles_enqueue_frontend_scripts');
  * Enqueue scripts in the editor only.
  */
 function wcus_block_styles_enqueue_editor_scripts() {   
-	wp_enqueue_script( 'WCUS Block Styles Editor Script', plugin_dir_url( __FILE__ ) . 'assets/editor.js' );
+	wp_enqueue_script( 'WCUS Block Styles Editor Script', plugin_dir_url( __FILE__ ) . 'assets/editor.js', filemtime( plugin_dir_url( __FILE__ ) . 'assets/editor.js' ), array( 'wp-blocks', 'wp-dom' ), true );
 }
 add_action('enqueue_block_editor_assets', 'wcus_block_styles_enqueue_editor_scripts');
 

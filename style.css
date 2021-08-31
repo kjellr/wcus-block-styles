@@ -140,3 +140,138 @@ h6.is-style-warped:not(.is-selected) {
 .is-style-baseline-shift > span:nth-child(10n+10) {
 	top: -0.5em;
 }
+
+/**
+ * Block Style: Photocopy Collage
+ */
+
+/* Gallery Shared Rules */
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) {
+	position: relative;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	width: 100%;
+}
+
+.wp-block-gallery.blocks-gallery-grid.has-nested-images.columns-default.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) figure.wp-block-image:not(#individual-image) {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-gallery.is-style-collage-stacked .wp-block-image {
+	filter: grayscale(100%) contrast(800%);
+	object-fit: cover;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image figcaption {
+	display: none;
+}
+
+.wp-block-gallery.is-style-collage-stacked:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url('./assets/noise.gif');
+	background-size: 125px 125px;
+	z-index: 500;
+	mix-blend-mode: exclusion;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:not(:nth-child(2)) {
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	mask-size: cover;
+	-webkit-mask-size: cover;
+	mask-position: center;
+	-webkit-mask-position: center;
+}
+
+/* Gallery Individual Rules */
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:first-child {
+	z-index: 2;
+	mask-image: url('./assets/tear-a.svg');
+	-webkit-mask-image: url('./assets/tear-a.svg');
+	height: 400px;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(2) {
+	z-index: 1;
+	margin-top: -100px !important;
+	height: 500px;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(2):last-child {
+	margin-top: -100px !important;
+	height: 400px;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(3) {
+	z-index: 2;
+	mask-image: url('./assets/tear-b.svg');
+	-webkit-mask-image: url('./assets/tear-b.svg');
+	height: 500px;
+	margin-top: -130px !important;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(3):last-child {
+	margin-top: -100px !important;
+	height: 400px;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(4) {
+	z-index: 3;
+	mask-image: url('./assets/tear-c.svg');
+	-webkit-mask-image: url('./assets/tear-c.svg');
+	height: 700px;
+	margin-top: -350px !important;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(4):last-child {
+	margin-top: -300px !important;
+	height: 600px;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(5) {
+	z-index: 4;
+	mask-image: url('./assets/tear-d.svg');
+	-webkit-mask-image: url('./assets/tear-d.svg');
+	height: 700px;
+	margin-top: -350px !important;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(5):last-child {
+	margin-top: -300px !important;
+	height: 600px;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(6) {
+	z-index: 5;
+	mask-image: url('./assets/tear-e.svg');
+	-webkit-mask-image: url('./assets/tear-e.svg');
+	height: 700px;
+	margin-top: -350px !important;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(6):last-child {
+	margin-top: -300px !important;
+	height: 600px;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(7) {
+	z-index: 5;
+	mask-image: url('./assets/tear-f.svg');
+	-webkit-mask-image: url('./assets/tear-f.svg');
+	height: 700px;
+	margin-top: -350px !important;
+}
+
+.wp-block-gallery.is-style-collage-stacked:not(.is-selected):not(.has-child-selected) .wp-block-image:nth-child(7):last-child {
+	margin-top: -300px !important;
+	height: 600px;
+}
