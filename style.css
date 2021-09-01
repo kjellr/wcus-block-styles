@@ -112,33 +112,42 @@ h6.is-style-warped:not(.is-selected) {
 
 .is-style-baseline-shift > span {
 	position: relative;
-	transition: all 0.4s ease-in-out;
+	transition: all 2s ease-in-out;
+	top: 0;
+	right: 0;
+	left: 0;
 }
 
 .is-style-baseline-shift:hover > span {
 	top: 0 !important;
+	right: 0 !important;
+	left: 0 !important;
 }
 
 .is-style-baseline-shift > span:nth-child(5n+1),
 .is-style-baseline-shift > span:nth-child(5n+4) {
 	top: 0;
+	left: -1.5em;
 }
 
 .is-style-baseline-shift > span:nth-child(6n+2) {
-	top: 0.25em;
+	top: 1em;
+	right: 0.5em;
 }
 
 .is-style-baseline-shift > span:nth-child(10n+5) {
-	top: 0.5em;
+	top: 2em;
+	right: 1em;
 }
 
 .is-style-baseline-shift > span:nth-child(10n+3),
 .is-style-baseline-shift > span:nth-child(10n+7) {
-	top: -0.25em;
+	top: -1em;
 }
 
 .is-style-baseline-shift > span:nth-child(10n+10) {
-	top: -0.5em;
+	top: -2em;
+	left: 2em;
 }
 
 /**
