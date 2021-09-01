@@ -1,14 +1,10 @@
-if ( wp.domReady ) {
-	wp.domReady( function() {
-		const getBlockList = () => wp.data.select( 'core/editor' ).getBlocks();
-		let blockList = getBlockList();
-		wp.data.subscribe(() => {
-			const newBlockList = getBlockList();
-			const blockListChanged = newBlockList !== blockList;
-			blockList = newBlockList;
-			if ( blockListChanged ) {
-			  jQuery(".is-style-baseline-shift:not(.is-selected)").lettering();
-			}
-		});
+wp.domReady( function() {
+	const getSelectedBlock = () => wp.data.select( 'core/editor' ).getSelectedBlock();
+	let selectedBlock = getSelectedBlock();
+	wp.data.subscribe(() => {
+		const newSelectedBlock = getSelectedBlock();
+		if ( newSelectedBlock === null ) {
+			jQuery(".is-style-baseline-shift:not(.is-selected)").lettering();
+		}
 	});
-}
+});
