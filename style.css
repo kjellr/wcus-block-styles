@@ -1,4 +1,26 @@
 /**
+ * Block Style: Rotate
+ */
+
+.is-style-rotate:not(.is-selected) {
+	animation: spin 20s linear infinite;
+}
+
+@media (prefers-reduced-motion) {
+	.is-style-rotate:not(.is-selected)  {
+		animation: initial;
+	}
+}
+
+@keyframes spin { 
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform:rotate(360deg); 
+	}
+}
+
+
+/**
  * Block Style: Jazz Cover
  */
 

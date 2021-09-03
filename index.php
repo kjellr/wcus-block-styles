@@ -24,6 +24,18 @@ if ( function_exists( 'register_block_style' ) ) {
 		);
 
 		/**
+		 * Register block style: Rotate
+		 */
+		register_block_style(
+			'core/image',
+			array(
+				'name'         => 'rotate',
+				'label'        => 'Rotate',
+				'style_handle' => 'block-styles-stylesheet',
+			)
+		);
+
+		/**
 		 * Register block style: Jazz Cover
 		 */
 		register_block_style(
