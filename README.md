@@ -50,9 +50,7 @@ Applies a random(ish) pattern of vertical and horizontal baseline ajustments to 
 
 ## Bugs?
 
-Yes, there are bugs! All of the styles here are just proof-of-concepts. With that in mind, please do feel free to file a bug report (or to provide a fix!). 
-
-In additon, if you know of a better way to accomplish one of the block styles here, I'd absolutely love to hear about it!
+Yes, there are bugs! All of the styles here are just proof-of-concepts. With that in mind, please do feel free to file a bug report (or to provide a fix!). In additon, if you know of a better way to accomplish one of the block styles here, I'd absolutely love to hear about it!
 
 ## More Resources
 
