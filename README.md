@@ -1,5 +1,7 @@
 # WCUS Block Styles
 
+![](https://cldup.com/bS4FW19diq.png)
+
 ## Overview
 
 This repo houses a demo plugin to show off a handful of artful block styles. These were showcased as part of a presentation called "Creative Use of Block Styles" at [WordCamp US 2021](http://us.wordcamp.org/2021/).
