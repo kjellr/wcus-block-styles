@@ -61,4 +61,4 @@ Yes, there are bugs! All of the styles here are just proof-of-concepts. With tha
 
 ## Questions? 
 
-Happy to help! Open an issue (or a PR!), ping `@kjellr` on twitter, or `@kjellr` on WordPress.org slack. 
+Happy to help! Open an issue (or a PR!), ping `@kjellr` on twitter, or `@kjellr` on WordPress.org slack. You can also find me at [kjellr.com](https://kjellr.com)
