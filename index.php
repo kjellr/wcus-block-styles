@@ -94,6 +94,18 @@ if ( function_exists( 'register_block_style' ) ) {
 				'style_handle' => 'block-styles-stylesheet',
 			)
 		);
+
+		/**
+		 * Register block style: Baseline Shift (Intense)
+		 */
+		register_block_style(
+			'core/heading',
+			array(
+				'name'         => 'baseline-shift-intense',
+				'label'        => 'Baseline Shift (Intense)',
+				'style_handle' => 'block-styles-stylesheet',
+			)
+		);
 	}
 
 	add_action( 'init', 'wcus_block_styles_register_wcus_block_styles' );
