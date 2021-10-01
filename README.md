@@ -34,7 +34,7 @@ Applies a stretched, wavy effect to text, reminiscent of the warping that occurs
 
 ### 5. Photocopy Collage (Gallery Block)
 
-Arranges gallery items vertically, and masks each one as if it's on a torn piece of paper. 
+Arranges gallery items vertically, and masks each one as if it's on a torn piece of paper. Please note, this one is written for [the refactored Gallery block](https://make.wordpress.org/core/2021/08/20/gallery-block-refactor-dev-note/) that arrived in Gutenberg 11.4 and will be included in WordPress 5.9.
 
 ![](https://cldup.com/fa9Qx8vGjr.gif)
 
